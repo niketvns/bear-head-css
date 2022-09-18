@@ -1,0 +1,151 @@
+:root {
+    --primary-color: rgb(221, 82, 50);
+}
+
+body {
+    background-image: linear-gradient(to bottom right, orange, white, green);
+}
+
+.container {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bear-head {
+    width: 150px;
+    height: 110px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.ear {
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.left-ear {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    z-index: -1;
+}
+
+.right-ear {
+    transform: rotate(45deg);
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    z-index: -1;
+}
+
+.inner {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+.left-eyebrow {
+    width: 18px;
+    height: 7px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: -15px;
+    left: -7px;
+}
+
+.right-eyebrow {
+    width: 18px;
+    height: 7px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    position: absolute;
+    top: -15px;
+    right: -7px;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-eye {
+    top: 55px;
+    left: 35px;
+}
+
+.right-eye {
+    top: 55px;
+    right: 35px;
+}
+
+.inner-eye {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    right: 2px;
+}
+
+.eye::after {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-color: wheat;
+    position: absolute;
+    top: 18px;
+    border-radius: 50%;
+}
+
+.nose {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    border-radius: 50% 50% 40% 40%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mus {
+    height: 14px;
+    background-color: black;
+    width: 2px;
+    position: absolute;
+    top: 72px;
+    left: 72px;
+}
+
+.mouth {
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid black;
+    border-radius: 40px;
+    position: absolute;
+    top: 55px;
+    left: 58px;
+}
